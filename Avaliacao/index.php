@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Class Crud</title>
-    </head>
-    <body>
         <?php
-        include '../Avaliacao/Class/ClassConexao.php';
-        $Conexao=new ClassConexao();
-        $Conexao->conectaDB();
+        include './Includes/Header.php';
         ?>
-    </body>
-</html>
+        <div class="Content">
+            <?php
+            include '../Avaliacao/Class/ClassConexao.php';
+            include '../Avaliacao/Class/ClassCrud.php';
+           
+            ?>
+        </div>
+        <?php include './Includes/Footer.php'; ?>
